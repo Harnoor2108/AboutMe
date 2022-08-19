@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<title>My Webpage</title>
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link rel="stylesheet" href="interest.css" type="text/css" >  
+	<script src="validate.js"></script>
+	
+</head>
+<body>
+	<div id="main-area">
+		<div id="Header">My Web Page</div>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="interest.html">Interests</a></li>
+				<li><a href="expertise.html">Expertise</a></li>
+			</ul></div>
+			<div class="aside">
+                <h3>About the Interest Page</h3>
+                <p>On this homepage I have diplayed some <br/>of my Interests</p>
+                <p>You will have to fill a visitors form</p>
+                
+            </div>
+        <div class="main">
+            
+			<h4>My Interests</h4>
+			<p>I love doing many things like painting, cooking, singing and reading</p>
+			<h4>Visitor Form</h4>
+			<form id="form1" method="post" action="https://httpbin.org/post" onsubmit='return validate();'>
+				<legend for="Fullname">Fullname</legend>
+				<input type="text" name="Fullname" id="Fullname" required>
+				<legend for="Message">Message</legend>
+				<input type="textbox" name="Message" id="Message" required>
+				<legend for="Email">Email</legend>
+				<input type="email" name="Email" id="Email" required>
+				<legend for="Phone">Phone</legend>
+				<input type="tel" name="Phone" id="Phone" placeholder="(999)999-9999" minlength="13" maxlength="13" pattern="[(][0-9]{3}[)][0-9]{3}-[0-9]{4}">
+				<legend for="Company">Company</legend>
+				<input type="text" name="Company" id="Company">
+				<legend for="Occupation">Occupation</legend>
+				<input type="text" name="Occupation" id="Occupation">
+				<legend for="Address">Address</legend>
+				<input type="text" name="Address" id="Address">
+				<br><br>
+				<input type="submit" name="Submit" value="Submit">
+				<input type="reset" name="Clear" value="Clear">
+				</form>
+				<div id="error"></div>
+        </div>
+        <div class="clear"></div>
+		<div id="Footer">Seneca College Copyright 2022</div>
+		</div>
+</body>
+</html>
